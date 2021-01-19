@@ -1,31 +1,31 @@
 {
   "properties": [
     {
-      "name": "org.neo4j.driver.pool.connection-acquisition-timeout",
+      "name": "neo4j.pool.connection-acquisition-timeout",
       "defaultValue": "1m"
     },
     {
-      "name": "org.neo4j.driver.config.connection-timeout",
+      "name": "neo4j.connection-timeout",
       "defaultValue": "5s"
     },
     {
-      "name": "org.neo4j.driver.config.load-balancing-strategy",
+      "name": "neo4j.load-balancing-strategy",
       "defaultValue": "LEAST_CONNECTED"
     },
     {
-      "name": "org.neo4j.driver.pool.max-connection-lifetime",
+      "name": "neo4j.pool.max-connection-lifetime",
       "defaultValue": "1h"
     },
     {
-      "name": "org.neo4j.driver.pool.max-connection-pool-size",
+      "name": "neo4j.pool.max-connection-pool-size",
       "defaultValue": 100
     },
     {
-      "name": "org.neo4j.driver.config.max-transaction-retry-time",
+      "name": "neo4j.max-transaction-retry-time",
       "defaultValue": "30s"
     },
     {
-      "name": "org.neo4j.driver.config.trust-settings.strategy",
+      "name": "neo4j.trust-settings.strategy",
       "defaultValue": "TRUST_ALL_CERTIFICATES"
     }
   ],

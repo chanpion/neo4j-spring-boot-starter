@@ -7,7 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration;
-import org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleMetricsExportAutoConfiguration;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -21,9 +20,8 @@ import java.util.Map;
  * @date 2021/1/18 20:32
  */
 @Configuration(proxyBeanMethods = false)
-@AutoConfigureAfter({MetricsAutoConfiguration.class, Neo4jAutoConfiguration.class, SimpleMetricsExportAutoConfiguration.class})
+@AutoConfigureAfter({MetricsAutoConfiguration.class, Neo4jAutoConfiguration.class})
 @ConditionalOnClass({Driver.class, MeterRegistry.class})
-@ConditionalOnBean({Driver.class, MeterRegistry.class})
 public class Neo4jMetricsAutoConfiguration {
     private static final Logger logger = LoggerFactory.getLogger(Neo4jMetricsAutoConfiguration.class);
 
