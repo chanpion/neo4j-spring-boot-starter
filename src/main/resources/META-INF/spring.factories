@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.chanpion.neo4j.autoconfigure.Neo4jAutoConfiguration,\
-  com.chanpion.neo4j.autoconfigure.Neo4jMetricsAutoConfiguration
+  com.chanpion.neo4j.autoconfigure.Neo4jMetricsAutoConfiguration,\
+  com.chanpion.neo4j.autoconfigure.Neo4jHealthContributorAutoConfiguration
